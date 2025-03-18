@@ -12,7 +12,7 @@ type RootLayoutProps = {
 
 export const RootLayout = ({ children, className }: RootLayoutProps) => {
   return (
-    <div className={cn('container bg-background min-h-screen', className)}>
+    <div className={cn('bg-background container mx-auto min-h-screen', className)}>
       <Header />
       <main className="py-6">{children}</main>
       <Toaster />
